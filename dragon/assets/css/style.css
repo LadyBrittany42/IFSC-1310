@@ -1,0 +1,272 @@
+/* -----color palette-----
+Primary- #0D0D0D, 
+Accent- #030ABC, 
+Heading- #03588C, 
+Hover-#A4A5A6 , 
+Hyerlink-#0511F2 */
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----- Utility Styles ---- 
+--for some reason, I could not put the .container in and have the pages work. 
+Every time I tried, everything got pushed to the left and I could not get them to move....
+that would be why the contact sheet/wufoo section is all crazy.*/
+
+
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*--global styles---*/
+body{ 
+  font-family: 'Montserrat', sans-serif;
+}
+
+header.primary, .container h2, .container h3{
+  font-family: 'Orbitron',sans-serif;
+  text-align:center;
+  color:#03588C;
+}
+
+header.primary img{
+  margin:0 0 10px 120px;
+}
+
+header.primary nav ul{
+    padding:50px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+header.primary nav ul a:link, header.primary nav ul a:visited{
+    color:#03588C;
+}
+
+header.primary nav ul a:active, header.primary nav ul a:hover{
+    color:#A4A5A6;
+}
+
+header.primary nav ul li{
+    list-style-type:none;
+    background-color:#000000;
+    padding:8px 16px;
+    border-radius:20px 5px;
+}
+
+.widget{
+  list-style-type:none;
+    background-color:#D0D0D0;
+    margin:20px;
+    padding:10px 10px 10px 10px;
+    border-radius:20px 5px;
+}
+
+aside article.widget footer{
+    display:none;
+}
+
+.widget a{
+  font-weight:bold;
+}
+
+#colophon h6{
+    margin:0;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+aside article.widget a:link, a:visted{
+    color:#03588C;
+}
+
+aside article.widget a:active, a:hover{
+    color:#A4A5A6;
+}
+
+/*----index.html---*/
+.post1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.post2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.post3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/*history*/
+
+/*after working on the top and bottom images, 
+going back and watching class sessions, 
+looking up different image related topics on w3...
+I cannot make these images fit as a block element
+with the text at the side*/
+
+#content.img-left{
+    display:block;
+    float:left;
+    border:1px solid #000000;
+    padding:20px;
+    margin:40px auto;
+}
+
+.img-right{
+  display:block;
+    float:right;
+    width:200px;
+    height:100px;
+    border:1px solid #000000;
+    padding:20px;
+    margin:40px auto;
+}
+
+#content{
+  margin:10px;
+  padding:20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 0 0 4em 0;
+}
+
+#articles h2, #content h2 {
+  flex: 0 0 100%;
+  color: #03588C;
+  text-align: center;
+  font-size: 2em;
+}
+
+#articles img{
+  width:400px;
+  height:250px;
+}
+
+#articles h5{
+  font-weight:bold;
+}
+  
+#articles article.post {
+  width: 32%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 20px 5px;;
+  background: #ffffff;
+}
+
+#articles article.post h2 {
+  font-size: 1.5em;
+  text-shadow: none;
+}
+
+#articles .post a:link, a:visited {
+  color: #03588C;
+}
+
+#articles article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+#articles article figcaption{
+  font-weight:bold;
+  font-size: 0.8em;
+  color: #c0c0c0;
+  text-transform: uppercase;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles .post img {
+  border-radius: 20px 5px;;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+#articles li {
+  margin-bottom: 20px;
+}
+
+table{
+    width:75%;
+    border:1px solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+caption{
+    font-weight:bold;
+    font-size:1.5rem;
+    margin:5px;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tr:hover{
+    background:#A4A5A6;
+}
+
+th{
+   background:#03588C; 
+
+/*---faq---*/
+dt{
+    font-weight:bold;
+    font-size:1.2em;
+    margin-top:2em;
+}
+
+dd{
+  margin:0 40px 0 40px;
+}
+
+dd + dt{
+    margin-top:1.4em;
+}
+
+.widget{
+  list-style-type:none;
+    background-color:#D0D0D0;
+    margin:20px;
+    padding:10px 10px 10px 10px;
+    border-radius:20px 5px;
+}
+
+ #wufoo-z1tbk5y5177kbyl{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
